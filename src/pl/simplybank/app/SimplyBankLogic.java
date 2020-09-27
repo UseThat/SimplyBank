@@ -16,7 +16,8 @@ public class SimplyBankLogic {
     public void simplyBankLoop(){
         dataReader = new DataReader(consolePrinter);
         bank.addBankAccount(dataReader.createBankAccount());
-        System.out.println();
+        System.out.println(bank.getBankAccounts().values());
+
         dataReader.closeReader();
     }
 

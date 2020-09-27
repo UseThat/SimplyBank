@@ -9,4 +9,8 @@ public class Bank {
     public void addBankAccount(BankAccount bankAccount){
         bank.put(bankAccount.getPerson().getBankUserID(), bankAccount);
     }
+
+    public Map<String, BankAccount> getBankAccounts(){
+         return bank;
+    }
 }

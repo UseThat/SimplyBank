@@ -39,4 +39,13 @@ public class BankAccount {
     public void setPerson(BankUser person) {
         this.person = person;
     }
+
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "IBN=" + IBN +
+                ", balance=" + balance +
+                ", person=" + person.getLastName() +
+                '}';
+    }
 }
