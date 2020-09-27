@@ -1,6 +1,7 @@
 package pl.simplybank.io;
 
 import pl.simplybank.model.BankAccount;
+import pl.simplybank.model.BankUser;
 
 import java.util.Scanner;
 
@@ -18,7 +19,19 @@ public class DataReader {
     }
 
     public BankAccount createBankAccount(){
-        System.out.println();
-        return null;
+        printer.printLine("IBN:");
+        int ibn = scanner.nextInt();
+        scanner.nextLine();
+        printer.printLine("Starting balance: ");
+        double balance = scanner.nextDouble();
+        scanner.nextLine();
+        printer.printLine("First name: ");
+        String firstName = scanner.nextLine();
+        printer.printLine("Last name: ");
+        String lastName = scanner.nextLine();
+        printer.printLine("Personal ID: ");
+        String personalId = scanner.nextLine();
+
+        return new BankAccount(ibn,balance,new BankUser(firstName,lastName,personalId));
     }
 }
