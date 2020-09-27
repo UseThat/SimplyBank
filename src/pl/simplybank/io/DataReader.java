@@ -6,8 +6,10 @@ import java.util.Scanner;
 
 public class DataReader {
     private Scanner scanner;
+    private ConsolePrinter printer;
 
-    public DataReader(){
+    public DataReader(ConsolePrinter printer){
+        this.printer = printer;
         scanner  = new Scanner(System.in);
     }
 
