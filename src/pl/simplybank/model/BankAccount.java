@@ -3,10 +3,12 @@ package pl.simplybank.model;
 public class BankAccount {
     private int IBN;
     private double amount;
+    private BankUser person;
 
-    public BankAccount(int IBN, double amount) {
+    public BankAccount(int IBN, double amount, BankUser person) {
         this.IBN = IBN;
         this.amount = amount;
+        this.person = person;
     }
 
     public int getIBN() {
@@ -23,5 +25,13 @@ public class BankAccount {
 
     public void setAmount(double amount) {
         this.amount = amount;
+    }
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(BankUser person) {
+        this.person = person;
     }
 }
