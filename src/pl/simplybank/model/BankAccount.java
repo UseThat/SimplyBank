@@ -32,7 +32,7 @@ public class BankAccount {
         this.balance = balance;
     }
 
-    public Person getPerson() {
+    public BankUser getPerson() {
         return person;
     }
 
