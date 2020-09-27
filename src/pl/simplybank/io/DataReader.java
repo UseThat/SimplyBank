@@ -1,5 +1,7 @@
 package pl.simplybank.io;
 
+import pl.simplybank.model.BankAccount;
+
 import java.util.Scanner;
 
 public class DataReader {
@@ -11,5 +13,9 @@ public class DataReader {
 
     public void closeReader(){
         scanner.close();
+    }
+
+    public BankAccount createBankAccount(){
+        return null;
     }
 }
